@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Baptiste arrive sur le site;
+:Baptiste clique sur "Se connecter";
+:Affichage du formulaire de connexion;
+:Baptiste entre son identifiant et son mot de passe;
+:Baptiste clique sur valider;
+:Connexion au compte;
+:Redirection vers la dernière page visitée;
+:Baptiste clique sur "Menu";
+:Affichage de la page "Menu";
+repeat :Baptiste clique sur le produit qu'il souhaite;
+:Baptiste entre la quantité;
+:Baptiste clique sur "Valider";
+if (La quantité a t-elle augmenté ou diminiué ?) then (augmenté)
+:Ajout au panier du nombre de produits;
+else (diminué)
+:Retrait au panier du nombre de produits;
+endif
+repeat while (Baptiste souhaite commander un autre produit) is (oui) not (non)
+:Baptiste fait défiler la page jusqu'au bouton "Valider ma commande";
+:Baptiste clique sur "Valider ma commande";
+:Enregistrement de la commande;
+:Actualisation de la liste des commandes sur l'application back-office;
+:Affichage d'une page proposant le paiement en ligne immédiat;
+if (Baptiste clique sur le bouton :) then ("oui")
+repeat :Affichage du formulaire de paiement;
+:Baptiste sélectionne son mode de paiement;
+:Baptiste entre ses informations de paiement;
+:Envoi d'une requête à la plateforme de paiement;
+backward:Affichage d'un message d'erreur;
+repeat while (Le paiement est-il effectué ?) is (non) not (oui)
+:Affichage d'un message de succès;
+:Passage de l'état de paiement en "Oui";
+else ("non")
+endif
+:Affichage de la page de suivi;
+
+stop
+
+@enduml

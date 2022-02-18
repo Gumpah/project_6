@@ -1,0 +1,73 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+usecase "Créer un compte" as UC1
+usecase "Afficher le menu" as UC2
+usecase "Passer une commande" as UC3
+usecase "Payer leur commande" as UC4
+usecase "Modifier leur commande" as UC5
+usecase "Annuler leur commande" as UC6
+usecase "Se connecter" as UC7
+usecase "Afficher la liste des commandes" as UC8
+usecase "Afficher la liste des ingrédients\ndisponibles (avec quantités)" as UC9
+usecase "Afficher une commande" as UC10
+usecase "Indiquer qu'une commande\nest en préparation"  as UC11
+usecase "Indiquer qu'une commande\nest prête à être livrée" as UC12
+usecase "Afficher la recette d'une pizza" as UC13
+usecase "Créer des comptes employé" as UC14
+usecase "Assigner des permissons aux comptes employé" as UC15
+usecase "Réserver une commande" as UC16
+usecase "Indiquer que la commande est livrée" as UC17
+usecase "Afficher les informations de la commande choisie" as UC18
+usecase "Réinitialiser son mot de passe" as UC19
+usecase "Afficher ses informations" as UC20
+usecase "Modifier ses informations" as UC21
+usecase "Afficher son historique de commandes" as UC22
+
+:Administration: as Admin
+
+Client --> UC2
+Client --> UC3
+Client -left-> UC1
+
+UC1 <.. UC19 : extends
+UC1 <.. UC20 : extends
+UC1 <.. UC21 : extends
+UC1 <.. UC22 : extends
+
+UC3 <.. UC4 : extends
+UC3 <. UC5 : extends
+UC3 <.. UC6 : extends
+
+Admin --> UC14
+
+UC15 ..> UC14 : extends
+
+Livreur --> UC16
+
+UC16 <.. UC17 : extends
+UC16 <.. UC18 : extends
+
+Cuisinier --> UC9
+Cuisinier --> UC10
+
+UC10 <.. UC11 : extends
+UC10 <.. UC12 : extends
+UC10 <.. UC13 : extends
+
+UC10 ..> UC8 : includes
+UC8 ..> UC7 : includes
+
+UC3 ..> UC7 : includes
+
+note "Condition : acteur = Client " as N1
+UC7 .. N1
+N1 ..> UC1 : includes
+
+
+UC16 ..> UC8 : includes
+
+UC14 ..> UC7 : includes
+@enduml

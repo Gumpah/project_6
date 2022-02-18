@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Baptiste arrive sur le site;
+:Baptiste clique sur "Se connecter";
+repeat :Affichage du formulaire de connexion;
+:Baptiste entre son identifiant et son mot de passe;
+:Baptiste clique sur valider;
+backward:Affichage des erreurs;
+repeat while (Informations valides ?) is (non) not (oui)
+:Connexion au compte;
+:Redirection vers la dernière page visitée;
+stop
+
+@enduml

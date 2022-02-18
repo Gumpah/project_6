@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Baptiste arrive sur le site;
+:Baptiste clique sur "Créer un compte";
+repeat :Affichage du formulaire de création de compte;
+:Baptiste entre ses informations;
+:Baptiste clique sur valider;
+backward:Affichage des erreurs;
+repeat while (Informations valides ?) is (non) not (oui)
+:Création du compte;
+:Envoi d'un mail de vérification d'adresse mail;
+:Affichage d'un message de succès;
+:Connexion au compte créé;
+:Redirection vers la page d'accueil;
+stop
+
+@enduml

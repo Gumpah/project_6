@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Livreur ouvre l'application employé;
+if (Livreur est connecté ?) then (oui)
+else (non)
+repeat :Affichage du formulaire de connexion;
+:Livreur entre son identifiant et son mot de passe;
+:Livreur clique sur valider;
+backward:Affichage des erreurs;
+repeat while (Informations valides ?) is (non) not (oui)
+:Connexion au compte;
+endif
+:Affichage de la page d'accueil;
+:Livreur clique sur l'icône du menu déroulant;
+:Livreur clique sur l'onglet "Ma Livraison";
+:Affichage de la page d'informations de la commande;
+:Livreur clique sur le bouton "Commande en préparation";
+:Changement de l'état de la commande pour "En préparation";
+:Affichage de la page "Rappel de recette(s)";
+:Livreur clique sur le bouton "Commande prête";
+:Changement de l'état de la commande pour "Prête";
+if (Un livreur est-il assigné à cette commande ?) then (non)
+else (oui)
+:Envoi d'une notification au livreur indiquant que la commande est prête à être livrée;
+endif
+:Suppression de la commande de la liste des commandes à préparer;
+stop
+
+@enduml

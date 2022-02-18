@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Baptiste arrive sur le site;
+:Baptiste clique sur "Menu";
+:Affichage de la page "Menu";
+
+stop
+
+@enduml
