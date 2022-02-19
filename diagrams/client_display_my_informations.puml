@@ -10,7 +10,6 @@ start
 :Connexion au compte;
 :Redirection vers la dernière page visitée;
 :Baptiste clique sur "Mon compte";
-:Affichage du menu déroulant de compte;
 :Baptiste clique sur "Mes informations";
 :Affichage de la page d'informations de compte;
 stop

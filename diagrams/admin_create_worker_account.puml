@@ -13,7 +13,6 @@ repeat while (Informations valides ?) is (non) not (oui)
 :Connexion au compte;
 endif
 :Affichage de la page d'accueil;
-:Administrateur clique sur l'icône du menu déroulant;
 :Administrateur clique sur l'onglet "Nouveau compte employé";
 :Affichage du formulaire de création de compte employé;
 :Administrateur définit une à une les permissions en indiquant cliquant sur oui ou non;
