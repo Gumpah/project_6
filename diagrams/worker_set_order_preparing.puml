@@ -2,21 +2,22 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
-:Livreur ouvre l'application employé;
-if (Livreur est connecté ?) then (oui)
+:Cuisinier ouvre l'application employé;
+if (Cuisinier est connecté ?) then (oui)
 else (non)
 repeat :Affichage du formulaire de connexion;
-:Livreur entre son identifiant et son mot de passe;
-:Livreur clique sur valider;
+:Cuisinier entre son identifiant et son mot de passe;
+:Cuisinier clique sur valider;
 backward:Affichage des erreurs;
 repeat while (Informations valides ?) is (non) not (oui)
 :Connexion au compte;
 endif
 :Affichage de la page d'accueil;
-:Livreur clique sur l'icône du menu déroulant;
-:Livreur clique sur l'onglet "Ma Livraison";
+:Cuisinier clique sur l'onglet "Commandes";
+:Affichage de la liste des commandes en attente;
+:Cuisinier clique sur une commande dans la liste;
 :Affichage de la page d'informations de la commande;
-:Livreur clique sur le bouton "Commande en préparation";
+:Cuisinier clique sur le bouton "Commande en préparation";
 :Changement de l'état de la commande pour "En préparation";
 :Affichage de la page "Rappel de recette";
 

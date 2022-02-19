@@ -13,7 +13,6 @@ repeat while (Informations valides ?) is (non) not (oui)
 :Connexion au compte;
 endif
 :Affichage de la page d'accueil;
-:Livreur clique sur l'icône du menu déroulant;
 :Livreur clique sur l'onglet "Commandes";
 repeat :Affichage de la page "Commandes";
 :Livreur clique sur une commande dans la liste;

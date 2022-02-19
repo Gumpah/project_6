@@ -16,7 +16,6 @@ repeat :Baptiste clique sur le produit qu'il souhaite;
 :Baptiste clique sur "Valider";
 :Ajout du produit au panier;
 repeat while (Baptiste souhaite commander un autre produit) is (oui) not (non)
-:Baptiste fait défiler la page jusqu'au bouton "Valider ma commande";
 :Baptiste clique sur "Valider ma commande";
 :Enregistrement de la commande;
 :Actualisation de la liste des commandes sur l'application back-office;
