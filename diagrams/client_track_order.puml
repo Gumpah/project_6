@@ -14,7 +14,7 @@ start
 repeat :Baptiste clique sur le produit qu'il souhaite;
 :Baptiste entre la quantité;
 :Baptiste clique sur "Valider";
-if (La quantité a t-elle augmenté ou diminiué ?) then (augmenté)
+if (La quantité a t-elle augmenté ou diminué ?) then (augmenté)
 :Ajout au panier du nombre de produits;
 else (diminué)
 :Retrait au panier du nombre de produits;

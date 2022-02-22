@@ -13,20 +13,9 @@ repeat while (Informations valides ?) is (non) not (oui)
 :Connexion au compte;
 endif
 :Affichage de la page d'accueil;
-:Livreur clique sur l'onglet "Commandes";
-repeat :Affichage de la page "Commandes";
-:Livreur clique sur une commande dans la liste;
-:Affichage de la page d'informations de la commande;
-:Livreur clique sur le bouton "Réserver";
-backward:Affichage d'un popup d'erreur;
-repeat while (La commande est-elle déjà réservée ?) is (oui) not (non)
-:Assignation du livreur comme en charge de la commande;
-if (La commande est-elle déjà prête ?) then (non)
-else (oui)
-:Affichage d'un message popup indiquant que la commande est prête à être livrée;
-endif
-:Suppression de la commande de la liste des commandes non assignées;
-:Affichage de la page d'informations de la commande;
+:Livreur clique sur le bouton "Prêt à livrer";
+:Ajout du livreur à la liste d'attente;
+
 stop
 
 @enduml

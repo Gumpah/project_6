@@ -18,9 +18,9 @@ usecase "Indiquer qu'une commande\nest prête à être livrée" as UC12
 usecase "Afficher la recette d'une pizza" as UC13
 usecase "Créer des comptes employé" as UC14
 usecase "Assigner des permissons aux comptes employé" as UC15
-usecase "Réserver une commande" as UC16
+usecase "Se mettre sur la liste d'attente" as UC16
 usecase "Indiquer que la commande est livrée" as UC17
-usecase "Afficher les informations de la commande choisie" as UC18
+usecase "Afficher les informations de la commande attitrée" as UC18
 usecase "Réinitialiser son mot de passe" as UC19
 usecase "Afficher ses informations" as UC20
 usecase "Modifier ses informations" as UC21
@@ -47,8 +47,9 @@ UC15 ..> UC14 : extends
 
 Livreur --> UC16
 
-UC16 <.. UC17 : extends
-UC16 <.. UC18 : extends
+UC18 <.. UC17 : extends
+UC16 <.. UC18 : includes
+UC16 ..> UC7 : includes
 
 Cuisinier --> UC9
 Cuisinier --> UC10
@@ -67,7 +68,7 @@ UC7 .. N1
 N1 ..> UC1 : includes
 
 
-UC16 ..> UC8 : includes
+
 
 UC14 ..> UC7 : includes
 @enduml
