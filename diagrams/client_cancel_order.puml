@@ -36,10 +36,10 @@ repeat while (Le paiement est-il effectué ?) is (non) not (oui)
 else ("non")
 endif
 :Affichage de la page de suivi;
+if (La commande est-elle en attente) then (non)
+stop
+else (oui)
 :Baptiste clique sur "Annuler ma commande";
-if (La commande est-elle en préparation) then (oui)
-:Affichage d'un message d'erreur;
-else (non)
 :Suppression de la commande;
 :Annulation de l'ordre de paiement;
 :Affichage d'un message de succès;

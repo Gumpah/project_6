@@ -36,15 +36,15 @@ repeat while (Le paiement est-il effectué ?) is (non) not (oui)
 else ("non")
 endif
 :Affichage de la page de suivi;
+if (La commande est-elle en attente) then (non)
+stop
+else (oui)
 :Baptiste clique sur "Modifier ma commande";
-if (La commande est-elle en préparation) then (oui)
-:Affichage d'un message d'erreur;
-else (non)
 :Affichage de la page "Menu";
 repeat :Baptiste clique sur le produit qu'il souhaite;
 :Baptiste entre la quantité;
 :Baptiste clique sur "Valider";
-if (La quantité a t-elle augmenté ou diminiué ?) then (augmenté)
+if (La quantité a t-elle augmenté ou diminué ?) then (augmenté)
 :Ajout au panier du nombre de produits;
 else (diminué)
 :Retrait au panier du nombre de produits;

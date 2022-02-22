@@ -11,7 +11,7 @@ start
 :Redirection vers la dernière page visitée;
 :Baptiste clique sur "Mon compte";
 :Baptiste clique sur "Mes commandes";
-:Affichage de la page d'historique de commandes';
+:Affichage de la page d'historique de commandes;
 stop
 
 @enduml

@@ -24,7 +24,8 @@ repeat while (Baptiste souhaite commander un autre produit) is (oui) not (non)
 :Enregistrement de la commande;
 :Actualisation de la liste des commandes sur l'application back-office;
 :Affichage d'une page proposant le paiement en ligne immédiat;
-if (Baptiste clique sur le bouton :) then ("oui")
+if (Baptiste souhaite-il payer en ligne ?) then (Oui)
+:Baptiste clique sur le bouton "Payer maintenant";
 repeat :Affichage du formulaire de paiement;
 :Baptiste sélectionne son mode de paiement;
 :Baptiste entre ses informations de paiement;
@@ -33,7 +34,8 @@ backward:Affichage d'un message d'erreur;
 repeat while (Le paiement est-il effectué ?) is (non) not (oui)
 :Affichage d'un message de succès;
 :Passage de l'état de paiement en "Oui";
-else ("non")
+else (Non)
+:Baptiste clique sur le bouton "Payer à la réception";
 endif
 :Affichage de la page de suivi;
 

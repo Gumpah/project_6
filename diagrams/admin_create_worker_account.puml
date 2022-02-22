@@ -15,7 +15,8 @@ endif
 :Affichage de la page d'accueil;
 :Administrateur clique sur l'onglet "Nouveau compte employé";
 :Affichage du formulaire de création de compte employé;
-:Administrateur définit une à une les permissions en indiquant cliquant sur oui ou non;
+repeat :Administrateur définit une permission en cliquant sur le bouton "Oui" ou "Non";
+repeat while (Reste-il encore des permissions à définir ?) is (oui) not (non)
 :Administrateur renseigne l'identifiant de l'employé dans le champ "Identifiant";
 :Administrateur renseigne le mot de passe de l'employé dans le champ "Mot de passe";
 :Administrateur clique sur le bouton "Créer le compte";
