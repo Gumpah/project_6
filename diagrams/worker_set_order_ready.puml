@@ -20,10 +20,8 @@ endif
 :Cuisinier clique sur le bouton "Commande en préparation";
 :Changement de l'état de la commande pour "En préparation";
 :Affichage de la page "Rappel de recette";
-:Cuisinier clique sur le bouton "Commande livrée";
-:Changement de l'état de la commande pour "Livrée";
-:Archivage de la commande dans l'historique des commandes;
-:Suppression de la commande;
+:Cuisinier clique sur le bouton "Commande prête";
+:Changement de l'état de la commande pour "Prête";
 :Affichage de la page "Commandes";
 
 stop
