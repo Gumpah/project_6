@@ -2,16 +2,21 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
+
 :Cuisinier ouvre l'application employé;
+
 if (Cuisinier est connecté ?) then (oui)
 else (non)
-repeat :Affichage du formulaire de connexion;
-:Cuisinier entre son identifiant et son mot de passe;
-:Cuisinier clique sur valider;
-backward:Affichage des erreurs;
-repeat while (Informations valides ?) is (non) not (oui)
-:Connexion au compte;
+    repeat :Affichage du formulaire de connexion;
+        :Cuisinier entre son identifiant et son mot de passe;
+        :Cuisinier clique sur valider;
+        backward:Affichage des erreurs;
+    repeat while (Informations valides ?) is (non) not (oui)
+
+    :Connexion au compte;
+
 endif
+
 :Affichage de la page d'accueil;
 :Cuisinier clique sur l'onglet "Commandes";
 :Affichage de la liste des commandes en attente;

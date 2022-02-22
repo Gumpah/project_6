@@ -2,6 +2,7 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
+
 :Baptiste arrive sur le site;
 :Baptiste clique sur "Se connecter";
 :Affichage du formulaire de connexion;
@@ -11,11 +12,13 @@ start
 :Redirection vers la dernière page visitée;
 :Baptiste clique sur "Menu";
 :Affichage de la page "Menu";
+
 repeat :Baptiste clique sur le produit qu'il souhaite;
-:Baptiste entre la quantité;
-:Baptiste clique sur "Valider";
-:Ajout du produit au panier;
+    :Baptiste entre la quantité;
+    :Baptiste clique sur "Valider";
+    :Ajout du produit au panier;
 repeat while (Baptiste souhaite commander un autre produit) is (oui) not (non)
+
 :Baptiste clique sur "Valider ma commande";
 :Enregistrement de la commande;
 :Actualisation de la liste des commandes sur l'application back-office;

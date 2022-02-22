@@ -2,6 +2,7 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
+
 :Baptiste arrive sur le site;
 :Baptiste clique sur "Se connecter";
 :Affichage du formulaire de connexion;
@@ -14,19 +15,25 @@ start
 :Affichage de la page d'informations de compte;
 :Baptiste clique sur "Modifier mes informations";
 :Les champs deviennent modifiables;
+
 repeat
-backward:Affichage des erreurs associées;
-repeat :Baptiste modifie le champ qu'il souhaite modifier;
-repeat while (Baptiste souhaite modifier un autre champ) is (oui) not (non)
-:Baptiste clique sur valider;
+    backward:Affichage des erreurs associées;
+
+    repeat :Baptiste modifie le champ qu'il souhaite modifier;
+    repeat while (Baptiste souhaite modifier un autre champ) is (oui) not (non)
+
+    :Baptiste clique sur valider;
 repeat while (Les contraintes de champs sont respectées ?) is (non) not (oui)
+
 if (L'adresse mail a été modifiée) then (oui)
-:Passage de l'état de l'adresse mail en "Non vérifiée";
-:Envoi d'un mail de vérification d'adresse mail;
+    :Passage de l'état de l'adresse mail en "Non vérifiée";
+    :Envoi d'un mail de vérification d'adresse mail;
 else (non)
 endif
+
 :Sauvegarde des informations;
 :Affichage d'un message de succès;
+
 stop
 
 @enduml

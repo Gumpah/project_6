@@ -2,21 +2,28 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
+
 :Administrateur ouvre l'application d'administration;
+
 if (Administrateur est connecté ?) then (oui)
 else (non)
-repeat :Affichage du formulaire de connexion;
-:Administrateur entre son identifiant et son mot de passe;
-:Administrateur clique sur valider;
-backward:Affichage des erreurs;
-repeat while (Informations valides ?) is (non) not (oui)
-:Connexion au compte;
+
+    repeat :Affichage du formulaire de connexion;
+        :Administrateur entre son identifiant et son mot de passe;
+        :Administrateur clique sur valider;
+        backward:Affichage des erreurs;
+    repeat while (Informations valides ?) is (non) not (oui)
+
+    :Connexion au compte;
 endif
+
 :Affichage de la page d'accueil;
 :Administrateur clique sur l'onglet "Nouveau compte employé";
 :Affichage du formulaire de création de compte employé;
+
 repeat :Administrateur définit une permission en cliquant sur le bouton "Oui" ou "Non";
 repeat while (Reste-il encore des permissions à définir ?) is (oui) not (non)
+
 :Administrateur renseigne l'identifiant de l'employé dans le champ "Identifiant";
 :Administrateur renseigne le mot de passe de l'employé dans le champ "Mot de passe";
 :Administrateur clique sur le bouton "Créer le compte";

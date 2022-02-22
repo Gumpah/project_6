@@ -2,16 +2,20 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
+
 :Livreur ouvre l'application employé;
+
 if (Livreur est connecté ?) then (oui)
 else (non)
-repeat :Affichage du formulaire de connexion;
-:Livreur entre son identifiant et son mot de passe;
-:Livreur clique sur valider;
-backward:Affichage des erreurs;
-repeat while (Informations valides ?) is (non) not (oui)
-:Connexion au compte;
+    repeat :Affichage du formulaire de connexion;
+        :Livreur entre son identifiant et son mot de passe;
+        :Livreur clique sur valider;
+        backward:Affichage des erreurs;
+    repeat while (Informations valides ?) is (non) not (oui)
+
+    :Connexion au compte;
 endif
+
 :Affichage de la page d'accueil;
 :Livreur clique sur l'onglet "Ma Livraison";
 :Affichage de la page d'informations de la commande;

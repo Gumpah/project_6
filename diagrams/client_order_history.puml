@@ -2,6 +2,7 @@
 'https://plantuml.com/activity-diagram-beta
 
 start
+
 :Baptiste arrive sur le site;
 :Baptiste clique sur "Se connecter";
 :Affichage du formulaire de connexion;
@@ -12,6 +13,7 @@ start
 :Baptiste clique sur "Mon compte";
 :Baptiste clique sur "Mes commandes";
 :Affichage de la page d'historique de commandes;
+
 stop
 
 @enduml
