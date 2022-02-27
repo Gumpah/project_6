@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/use-case-diagram
 
+title Diagramme de cas d'utilisation
+
 left to right direction
 
 usecase "Créer un compte" as UC1

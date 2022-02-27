@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Livreur : Se mettre sur la liste d’attente
+
 start
 :Livreur ouvre l'application employé;
 

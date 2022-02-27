@@ -1,15 +1,17 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Cuisinier : Afficher la liste des ingrédients disponibles (avec quantités)
+
 start
 
-:Livreur ouvre l'application employé;
+:Cuisinier ouvre l'application employé;
 
-if (Livreur est connecté ?) then (oui)
+if (Cuisinier est connecté ?) then (oui)
 else (non)
     repeat :Affichage du formulaire de connexion;
-        :Livreur entre son identifiant et son mot de passe;
-        :Livreur clique sur valider;
+        :Cuisinier entre son identifiant et son mot de passe;
+        :Cuisinier clique sur valider;
         backward:Affichage des erreurs;
     repeat while (Informations valides ?) is (non) not (oui)
 
@@ -17,7 +19,7 @@ else (non)
 endif
 
 :Affichage de la page d'accueil;
-:Livreur clique sur l'onglet "Stocks";
+:Cuisinier clique sur l'onglet "Stocks";
 :Affichage de la page de stocks;
 
 stop

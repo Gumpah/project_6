@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Client : Afficher le menu
+
 start
 
 :Baptiste arrive sur le site;

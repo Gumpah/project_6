@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Administration : Créer un compte employé
+
 start
 
 :Administrateur ouvre l'application d'administration;

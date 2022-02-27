@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Client : Suivre leur commande
+
 start
 
 :Baptiste arrive sur le site;

@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Cuisinier : Indiquer qu’une commande est en préparation
+
 start
 
 :Cuisinier ouvre l'application employé;

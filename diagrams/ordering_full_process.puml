@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Processus complet de prise de commande
+
 start
 
 :Baptiste arrive sur le site;

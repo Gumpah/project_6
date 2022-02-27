@@ -13,6 +13,8 @@ start
 :Baptiste clique sur "Menu";
 :Affichage de la page "Menu";
 
+title Client : Modifier leur commande
+
 repeat :Baptiste clique sur le produit qu'il souhaite;
 
     :Baptiste entre la quantité;

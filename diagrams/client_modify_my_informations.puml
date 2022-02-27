@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Client : Modifier ses informations
+
 start
 
 :Baptiste arrive sur le site;

@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Cuisinier : Afficher la recette d’une pizza
+
 start
 
 :Cuisinier ouvre l'application employé;

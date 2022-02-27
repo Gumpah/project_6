@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Administration : Se connecter
+
 start
 
 :Administrateur ouvre l'application d'administration;

@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Employé : Se connecter
+
 start
 
 :Livreur ouvre l'application;

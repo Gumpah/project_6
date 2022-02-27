@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Client : Créer un compte
+
 start
 :Baptiste arrive sur le site;
 :Baptiste clique sur "Créer un compte";

@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/activity-diagram-beta
 
+title Livreur : Indiquer que la commande est livrée
+
 start
 
 :Livreur ouvre l'application employé;
